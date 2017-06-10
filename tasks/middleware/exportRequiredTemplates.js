@@ -111,7 +111,7 @@ function ExportRequiredTemplatesMiddleware (context)
       match[1].split (',').forEach (function (s)
       {
         var url = s.match (/(["'])(.*?)\1/)[2];
-        paths.push (path.normalize (path.dirname (filePath) + '/' + url));
+        paths.push (url);
       });
     }
   }
